@@ -1,0 +1,38 @@
+{
+    "name": "greatsami/entrust",
+    "description": "This package provides a flexible way to add Role-based Permissions to Laravel",
+    "keywords": ["laravel","illuminate","auth","roles","acl","permission"],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sami Mansour",
+            "email": "samiman.net@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.2",
+        "illuminate/console": "^6.0",
+        "illuminate/support": "^6.0",
+        "illuminate/cache": "^6.0"
+    },
+    "autoload": {
+        "classmap": [
+            "src/commands"
+        ],
+        "psr-4": {
+            "Greatsami\\Entrust\\": "src/Entrust/"
+        }
+    },
+    "extra":{
+        "laravel":{
+            "providers":[
+                "Greatsami\\Entrust\\EntrustServiceProvider"
+            ],
+            "aliases":{
+                "Entrust": "Greatsami\\Entrust\\EntrustFacade"
+            }
+        }
+    },
+    "minimum-stability": "dev"
+}
