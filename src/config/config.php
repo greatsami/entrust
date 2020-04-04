@@ -55,7 +55,7 @@ return [
     |
     */
     'permission_role_table' => 'permission_role',
-    'permission_user_table' => 'user_permissions',
+    'user_permission_table' => 'user_permissions',
 
     /*
     |--------------------------------------------------------------------------
