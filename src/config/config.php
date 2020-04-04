@@ -1,13 +1,5 @@
 <?php
 
-/**
- * This file is part of Entrust,
- * a role & permission management solution for Laravel.
- *
- * @license MIT
- * @package Greatsami\Entrust
- */
-
 return [
 
     /*
@@ -30,61 +22,6 @@ return [
     |
     */
     'roles_table' => 'roles',
-
-    /*
-    |--------------------------------------------------------------------------
-    | Entrust role foreign key
-    |--------------------------------------------------------------------------
-    |
-    | This is the role foreign key used by Entrust to make a proper
-    | relation between permissions and roles & roles and users
-    |
-    */
-    'role_foreign_key' => 'role_id',
-
-    /*
-    |--------------------------------------------------------------------------
-    | Application User Model
-    |--------------------------------------------------------------------------
-    |
-    | This is the User model used by Entrust to create correct relations.
-    | Update the User if it is in a different namespace.
-    |
-    */
-    'user' => 'App\User',
-
-    /*
-    |--------------------------------------------------------------------------
-    | Application Users Table
-    |--------------------------------------------------------------------------
-    |
-    | This is the users table used by the application to save users to the
-    | database.
-    |
-    */
-    'users_table' => 'users',
-
-    /*
-    |--------------------------------------------------------------------------
-    | Entrust role_user Table
-    |--------------------------------------------------------------------------
-    |
-    | This is the role_user table used by Entrust to save assigned roles to the
-    | database.
-    |
-    */
-    'role_user_table' => 'role_user',
-
-    /*
-    |--------------------------------------------------------------------------
-    | Entrust user foreign key
-    |--------------------------------------------------------------------------
-    |
-    | This is the user foreign key used by Entrust to make a proper
-    | relation between roles and users
-    |
-    */
-    'user_foreign_key' => 'user_id',
 
     /*
     |--------------------------------------------------------------------------
@@ -118,26 +55,31 @@ return [
     |
     */
     'permission_role_table' => 'permission_role',
-
-    /*
-    |--------------------------------------------------------------------------
-    | Entrust user_permission Table
-    |--------------------------------------------------------------------------
-    |
-    | This is the user_permission table used by Entrust to save relationship
-    | between permissions and users to the database.
-    |
-    */
     'permission_user_table' => 'user_permissions',
 
     /*
     |--------------------------------------------------------------------------
-    | Entrust permission foreign key
+    | Entrust role_user Table
     |--------------------------------------------------------------------------
     |
-    | This is the permission foreign key used by Entrust to make a proper
-    | relation between permissions and roles
+    | This is the role_user table used by Entrust to save assigned roles to the
+    | database.
     |
     */
-    'permission_foreign_key' => 'permission_id',
+    'role_user_table' => 'role_user',
+
+    /*
+    |--------------------------------------------------------------------------
+    | User Foreign key on Entrust's role_user Table (Pivot)
+    |--------------------------------------------------------------------------
+    */
+    'user_foreign_key' => 'user_id',
+
+    /*
+    |--------------------------------------------------------------------------
+    | Role Foreign key on Entrust's role_user Table (Pivot)
+    |--------------------------------------------------------------------------
+    */
+    'role_foreign_key' => 'role_id',
+
 ];
