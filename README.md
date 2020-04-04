@@ -30,7 +30,7 @@ Entrust is a succinct and flexible way to add Role-based Permissions to **Larave
 1) In order to install Laravel 6 Entrust, just add the following to your composer.json. Then run `composer update`:
 
 ```json
-"Greatsami/entrust": "1.0.0"
+"greatsami/entrust": "1.0.0"
 ```
 
 2) Open your `config/app.php` and add the following to the `providers` array:
