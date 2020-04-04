@@ -1,6 +1,6 @@
 {
     "name": "greatsami/entrust",
-    "description": "This package provides a flexible way to add Role-based Permissions to Laravel",
+    "description": "This package provides a flexible way to add Role-based Permissions to Laravel Customized by Sami Mansour",
     "keywords": ["laravel","illuminate","auth","roles","acl","permission"],
     "type": "library",
     "license": "MIT",
