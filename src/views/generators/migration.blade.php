@@ -72,7 +72,6 @@ class EntrustSetupTables extends Migration
             $table->primary(['user_id', 'permission_id']);
         });
 
-        DB::commit();
     }
 
     /**
