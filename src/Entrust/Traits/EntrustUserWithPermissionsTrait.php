@@ -23,7 +23,7 @@ trait EntrustUserWithPermissionsTrait
      */
     public function permissions()
     {
-        return $this->belongsToMany(Config::get('entrust.permission'), Config::get('entrust.permission_user_table'), 'user_id', 'permission_id');
+        return $this->belongsToMany(Config::get('entrust.permission'), Config::get('entrust.user_permission_table'), 'user_id', 'permission_id');
     }
 
     /**
